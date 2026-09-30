@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EMI Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Calculate Mortgage/EMI</h1>
+        </header>
+
+        <main>
+
+        <section class="calculate">
+
+            <h2>Loan Details</h2>
+
+            <form id="emiform">
+
+            <div class="loan">
+                <label for="amount">
+                    Loan Amount ₹:
+                </label>
+                <input id="amount" type="number" placeholder="Enter a loan amount" required>
+            </div>
+            <br>
+
+            <div class="loan">
+                <label for="in-rate">
+                    Interest Rate:
+                </label>
+                <input id="in-rate" type="number" min="1" step="0.5" required>
+            </div>
+            <br>
+            <div class="loan">
+                <label for="durate">Duration (month):</label>
+                <input id="durate" type="number" min="1" step="1" required>
+            </div>
+            <br>
+            <div class="btn">
+                <button class="submit" type="submit">Calculate EMI</button>
+                <button class="r-submit" type="reset">Reset</button>
+            </div>
+
+            </form>
+
+        </section>
+
+        <section class="result">
+        
+                <h2>Calculated EMI</h2>
+            <div class="result-grid">
+
+            <div class="total">
+                <span>Total Duration:</span>
+                <strong id="totalmonths">0</strong>
+            </div>
+            <div class="total">
+                <span>Total Intrest</span>
+                <strong id="totalinterest">₹0.0</strong>
+            </div>
+            <div class="total">
+                <span>Total amount</span>
+                <strong id="totalamount">₹0.0</strong>
+            </div>
+            <div class="total">
+                <span>monthly EMI</span>
+                <strong id="emi">₹0.0</strong>
+            </div>
+            </div>
+        </section>
+        </main>
+    </body>
+</html>
